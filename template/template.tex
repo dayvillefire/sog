@@ -1,0 +1,31 @@
+\documentclass[12pt]{sog}
+\title{$title$}
+\date{$date$}
+\author{$author$}
+\sognumber{SOG $sognumber$}
+\approved{$approved$}
+\sectiontitle{$section$}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+\maketitle
+
+\par SOG: $sognumber$
+
+\par SUBJECT: $title$
+
+\par PURPOSE: $purpose$
+
+\par DEFINITION:
+
+$if(has-frontmatter)$
+\mainmatter
+$endif$
+$body$
+
+\end{document}
