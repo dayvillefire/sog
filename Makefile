@@ -1,5 +1,9 @@
 .SUFFIXES: .pdf
 
+TARGETS := $(shell ls -1 *.md | sed -e 's/\.md/\.pdf/;')
+
+all: clean $(TARGETS)
+
 clean:
 	rm *.pdf -vf
 

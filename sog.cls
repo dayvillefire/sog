@@ -26,6 +26,9 @@
 \titleformat{\subsection}{\normalfont\bfseries}
   {}{0pt}{}
 
+% Disable default indent
+\setlength{\parindent}{0pt}
+
 % Modification of title block
 \RequirePackage{titling}
 \RequirePackage{multirow}
@@ -37,7 +40,7 @@
 \renewcommand{\title}[1]{\oldtitle{#1}\newcommand{\mythetitle}{#1}}
 \renewcommand{\maketitle}{%
 \begin{tabular}{|c|p{2in}|l|l|} \hline
-\multirow{3}{*}{\includegraphics[width=1.5cm, height=1cm]{dfc-logo}} & \multicolumn{1}{p{2.5in}|}{\centering \textbf{Dayville Fire Company} } & \multicolumn{2}{l|}{Number: \mythenumber } \\
+\multirow{3}{*}{\includegraphics[width=1.5cm, height=1cm]{dfc-logo-small}} & \multicolumn{1}{p{2.5in}|}{\centering \textbf{Dayville Fire Company} } & \multicolumn{2}{l|}{Number: \mythenumber } \\
 \cline{2-4}
 & \multicolumn{1}{p{2.5in}|}{\centering Standard Operating Procedure } & \multicolumn{2}{p{2.5in}|}{Title: \mythetitle} \\ \cline{2-4}
 & \multicolumn{1}{p{2.5in}|}{\centering Section: \mysectiontitle} & \multicolumn{2}{l|}{Revision Date: \theapproved} \\ \hline
