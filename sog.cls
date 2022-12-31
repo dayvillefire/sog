@@ -64,7 +64,7 @@
 \fancyhead[R]{%
 \begin{tabular}{|c|c|} \hline %
 Revision Date: & Number: \\
-\theapproved & \\ \hline
+\theapproved & \mythenumber \\ \hline
 \end{tabular}%
 }
 \fancyfoot[L]{\framebox{\mythenumber}}
