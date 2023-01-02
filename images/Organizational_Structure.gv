@@ -1,0 +1,40 @@
+graph {
+
+    "Fire Chief" -- "Deputy Chief"
+    "Deputy Chief" -- "Assistant Chief" 
+
+    "Assistant Chief" -- "House Captain";
+    "House Captain" -- "Engine Captain";
+    "House Captain" -- "Rescue Captain";
+    "House Captain" -- "EMS Captain";
+    "House Captain" -- "Fire Police Captain";
+    "House Captain" -- "Chief Engineer";
+
+    "Engine Captain" -- "Co 1 Lt 1";
+    "Engine Captain" -- "Co 1 Lt 2";
+    "Engine Captain" -- "Co 1 Lt 3";
+    
+    "Co 1 Lt 1" [label="Engine Lt"];
+    "Co 1 Lt 2" [label="Engine Lt"];
+    "Co 1 Lt 3" [label="Engine Lt"];
+
+    "Rescue Captain" -- "Co 2 Lt 1";
+    "Rescue Captain" -- "Co 2 Lt 2";
+    
+    "Co 2 Lt 1" [label="Rescue Lt"];
+    "Co 2 Lt 2" [label="Rescue Lt"];
+
+    "EMS Captain" -- "Co 3 Lt 1";
+    "EMS Captain" -- "Co 3 Lt 2";
+    
+    "Co 3 Lt 1" [label="EMS Lt"];
+    "Co 3 Lt 2" [label="EMS Lt"];
+
+    "Fire Police Captain" -- "Fire Police Lt";
+
+    "Chief Engineer" -- "Eng 1";
+    "Chief Engineer" -- "Eng 2";
+
+    "Eng 1" [label="Engineer"];
+    "Eng 2" [label="Engineer"];
+}

@@ -11,6 +11,10 @@
 \usepackage{fontspec}
 \setmainfont{Arial}
 
+% Table support
+\usepackage{booktabs}
+\usepackage{longtable}
+
 % Redefine the page margins
 \RequirePackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
 
